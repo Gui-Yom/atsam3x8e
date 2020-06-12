@@ -1,0 +1,26 @@
+[package]
+name = "atsam3x8e"
+version = "1.0.0"
+authors = ["Gui-Yom <memorial.limelion@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/Gui-Yom/atsam3x8e"
+license = "MIT"
+keywords = ["sam3x", "sam3x8e", "atsam3x8e", "cortex-m", "cortex-m3", "no_std", "embedded", "svd2rust"]
+readme = "README.md"
+description =  "Device support crate for atsam3x8e devices"
+
+[lib]
+test = false
+bench = false
+
+[dependencies]
+bare-metal = "^0.2.5"
+cortex-m = "^0.6.2"
+vcell = "^0.1.2"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "^0.6.12"
+
+[features]
+rt = ["cortex-m-rt/device"]
