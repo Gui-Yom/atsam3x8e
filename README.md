@@ -15,3 +15,5 @@ the crate to compile *(essential)* and to prevent *(warnings)* during compilatio
  have been set to dummy values. *(essential)*
  - `src/chipid/cidr.rs` : added `#[allow(unreachable_patterns)]` *(warnings)*
  - `src/lib.rs` : added `#![allow(unused_braces)]` *(warnings)*
+ - `src/piob.rs` : added reset values to some writable registers, *(essential)*
+ in order to write to them.

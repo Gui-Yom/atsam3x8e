@@ -67,6 +67,10 @@ pub struct _PER;
 #[doc = "`write(|w| ..)` method takes [per::W](per::W) writer structure"]
 impl crate::Writable for PER {}
 
+impl crate::ResetValue for PER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "PIO Enable Register"]
 pub mod per;
 
@@ -79,6 +83,10 @@ pub struct _PDR;
 
 #[doc = "`write(|w| ..)` method takes [pdr::W](pdr::W) writer structure"]
 impl crate::Writable for PDR {}
+
+impl crate::ResetValue for PDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "PIO Disable Register"]
 pub mod pdr;
@@ -106,6 +114,10 @@ pub struct _OER;
 #[doc = "`write(|w| ..)` method takes [oer::W](oer::W) writer structure"]
 impl crate::Writable for OER {}
 
+impl crate::ResetValue for OER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Output Enable Register"]
 pub mod oer;
 
@@ -118,6 +130,10 @@ pub struct _ODR;
 
 #[doc = "`write(|w| ..)` method takes [odr::W](odr::W) writer structure"]
 impl crate::Writable for ODR {}
+
+impl crate::ResetValue for ODR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Output Disable Register"]
 pub mod odr;
@@ -145,6 +161,10 @@ pub struct _IFER;
 #[doc = "`write(|w| ..)` method takes [ifer::W](ifer::W) writer structure"]
 impl crate::Writable for IFER {}
 
+impl crate::ResetValue for IFER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Glitch Input Filter Enable Register"]
 pub mod ifer;
 
@@ -157,6 +177,10 @@ pub struct _IFDR;
 
 #[doc = "`write(|w| ..)` method takes [ifdr::W](ifdr::W) writer structure"]
 impl crate::Writable for IFDR {}
+
+impl crate::ResetValue for IFDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Glitch Input Filter Disable Register"]
 pub mod ifdr;
@@ -184,6 +208,11 @@ pub struct _SODR;
 #[doc = "`write(|w| ..)` method takes [sodr::W](sodr::W) writer structure"]
 impl crate::Writable for SODR {}
 
+impl crate::ResetValue for SODR {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
+
 #[doc = "Set Output Data Register"]
 pub mod sodr;
 
@@ -196,6 +225,10 @@ pub struct _CODR;
 
 #[doc = "`write(|w| ..)` method takes [codr::W](codr::W) writer structure"]
 impl crate::Writable for CODR {}
+
+impl crate::ResetValue for CODR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Clear Output Data Register"]
 pub mod codr;
@@ -212,6 +245,10 @@ impl crate::Readable for ODSR {}
 
 #[doc = "`write(|w| ..)` method takes [odsr::W](odsr::W) writer structure"]
 impl crate::Writable for ODSR {}
+
+impl crate::ResetValue for ODSR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Output Data Status Register"]
 pub mod odsr;
@@ -239,6 +276,10 @@ pub struct _IER;
 #[doc = "`write(|w| ..)` method takes [ier::W](ier::W) writer structure"]
 impl crate::Writable for IER {}
 
+impl crate::ResetValue for IER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Interrupt Enable Register"]
 pub mod ier;
 
@@ -251,6 +292,10 @@ pub struct _IDR;
 
 #[doc = "`write(|w| ..)` method takes [idr::W](idr::W) writer structure"]
 impl crate::Writable for IDR {}
+
+impl crate::ResetValue for IDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Interrupt Disable Register"]
 pub mod idr;
@@ -291,6 +336,10 @@ pub struct _MDER;
 #[doc = "`write(|w| ..)` method takes [mder::W](mder::W) writer structure"]
 impl crate::Writable for MDER {}
 
+impl crate::ResetValue for MDER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Multi-driver Enable Register"]
 pub mod mder;
 
@@ -303,6 +352,10 @@ pub struct _MDDR;
 
 #[doc = "`write(|w| ..)` method takes [mddr::W](mddr::W) writer structure"]
 impl crate::Writable for MDDR {}
+
+impl crate::ResetValue for MDDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Multi-driver Disable Register"]
 pub mod mddr;
@@ -330,6 +383,10 @@ pub struct _PUDR;
 #[doc = "`write(|w| ..)` method takes [pudr::W](pudr::W) writer structure"]
 impl crate::Writable for PUDR {}
 
+impl crate::ResetValue for PUDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Pull-up Disable Register"]
 pub mod pudr;
 
@@ -342,6 +399,10 @@ pub struct _PUER;
 
 #[doc = "`write(|w| ..)` method takes [puer::W](puer::W) writer structure"]
 impl crate::Writable for PUER {}
+
+impl crate::ResetValue for PUER {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Pull-up Enable Register"]
 pub mod puer;
@@ -385,6 +446,10 @@ pub struct _SCIFSR;
 #[doc = "`write(|w| ..)` method takes [scifsr::W](scifsr::W) writer structure"]
 impl crate::Writable for SCIFSR {}
 
+impl crate::ResetValue for SCIFSR {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "System Clock Glitch Input Filter Select Register"]
 pub mod scifsr;
 
@@ -397,6 +462,10 @@ pub struct _DIFSR;
 
 #[doc = "`write(|w| ..)` method takes [difsr::W](difsr::W) writer structure"]
 impl crate::Writable for DIFSR {}
+
+impl crate::ResetValue for DIFSR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Debouncing Input Filter Select Register"]
 pub mod difsr;
@@ -440,6 +509,10 @@ pub struct _OWER;
 #[doc = "`write(|w| ..)` method takes [ower::W](ower::W) writer structure"]
 impl crate::Writable for OWER {}
 
+impl crate::ResetValue for OWER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Output Write Enable"]
 pub mod ower;
 
@@ -452,6 +525,10 @@ pub struct _OWDR;
 
 #[doc = "`write(|w| ..)` method takes [owdr::W](owdr::W) writer structure"]
 impl crate::Writable for OWDR {}
+
+impl crate::ResetValue for OWDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Output Write Disable"]
 pub mod owdr;
@@ -479,6 +556,10 @@ pub struct _AIMER;
 #[doc = "`write(|w| ..)` method takes [aimer::W](aimer::W) writer structure"]
 impl crate::Writable for AIMER {}
 
+impl crate::ResetValue for AIMER {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Additional Interrupt Modes Enable Register"]
 pub mod aimer;
 
@@ -491,6 +572,10 @@ pub struct _AIMDR;
 
 #[doc = "`write(|w| ..)` method takes [aimdr::W](aimdr::W) writer structure"]
 impl crate::Writable for AIMDR {}
+
+impl crate::ResetValue for AIMDR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Additional Interrupt Modes Disables Register"]
 pub mod aimdr;
@@ -518,6 +603,10 @@ pub struct _ESR;
 #[doc = "`write(|w| ..)` method takes [esr::W](esr::W) writer structure"]
 impl crate::Writable for ESR {}
 
+impl crate::ResetValue for ESR {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Edge Select Register"]
 pub mod esr;
 
@@ -530,6 +619,10 @@ pub struct _LSR;
 
 #[doc = "`write(|w| ..)` method takes [lsr::W](lsr::W) writer structure"]
 impl crate::Writable for LSR {}
+
+impl crate::ResetValue for LSR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Level Select Register"]
 pub mod lsr;
@@ -557,6 +650,10 @@ pub struct _FELLSR;
 #[doc = "`write(|w| ..)` method takes [fellsr::W](fellsr::W) writer structure"]
 impl crate::Writable for FELLSR {}
 
+impl crate::ResetValue for FELLSR {
+    fn reset_value() -> Self::Ux { 0 }
+}
+
 #[doc = "Falling Edge/Low Level Select Register"]
 pub mod fellsr;
 
@@ -569,6 +666,10 @@ pub struct _REHLSR;
 
 #[doc = "`write(|w| ..)` method takes [rehlsr::W](rehlsr::W) writer structure"]
 impl crate::Writable for REHLSR {}
+
+impl crate::ResetValue for REHLSR {
+    fn reset_value() -> Self::Ux { 0 }
+}
 
 #[doc = "Rising Edge/ High Level Select Register"]
 pub mod rehlsr;
